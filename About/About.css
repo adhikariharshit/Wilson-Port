@@ -1,0 +1,792 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+  }
+  
+
+       /* Header Section Css */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+  
+  .main-nav {
+    background-color: white;
+    color: rgba(5, 5, 5, 0.866);
+    padding: 10px 0;
+  }
+  
+  .main-nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-cont img {
+    width: 200px;
+    height: auto;
+    margin-left:-5rem;
+  }
+  
+  .ham-menu-cont {
+    display: none;
+  }
+  
+  .full-menu-links {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size:1.2rem;
+    margin-right:-2rem;
+    gap:1.2rem;
+  }
+  .full-menu-links ul a {
+    padding:1.2rem 2rem 1.2rem 1.1rem;
+    color: #333;
+    font-size:1.1rem;
+    font-weight: bold;
+  }
+  .full-menu-links  ul a:hover {
+        background-color: gray;
+    }
+  .link-cont {
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: gray;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .first-dropdown {
+    display: none;
+    position: absolute;
+    padding:1.1rem 2rem 1.2rem 2rem;
+    color: #333;
+    list-style-type: none;
+    top: 100%;
+    left: -2rem;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .first-dd-link {
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 13px;
+    display: block;
+  }
+  
+  
+  .link-cont:hover .first-dropdown  {
+    display: block;
+  }
+  
+  .responsive-nav-content {
+    display: none;
+  }
+  
+
+
+  /* About Section */
+.conti-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url("../Image/truck-bg-compressed.jpg");
+    height: 80vh; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure the background covers the entire container */
+    margin-bottom:1rem;
+}
+
+.about{
+     display: flex;
+     flex-direction: column;
+     line-height:5rem;
+
+}
+
+.heading-about h1 {
+    color:white; 
+    font-size:3.8rem; 
+    padding:10rem 0rem 1rem 5.4rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    position: relative;
+
+}
+.heading-about h1::after{
+    content: "";
+    display: block;
+    width: 40px; /* Adjust the width of the line as needed */
+    height: 5px;
+    background-color: rgb(255, 1, 1);
+    position: absolute;
+    bottom:0; /* Adjust the bottom position to align with the text */
+    left: 5.4rem;
+}
+.para-about {
+    color:white;
+    padding:2rem 0rem 0rem 5.3rem;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    line-height: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+      /* 
+Message-section */
+
+.message{
+    display: flex;
+    flex-direction: row;
+    margin:8rem 4rem 5rem 5rem;
+}
+.img-man-1 img{
+    margin-left:2.4rem;
+    width: 580px;
+    height: 670px;
+}
+.mes{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    margin:8rem 3rem 11rem -7rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mes-head h3{
+    padding:3rem 0rem 1rem 1.8rem;
+    font-size:2rem;
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 0.542);
+    font-weight: bold;
+    position: relative;
+}
+.mes-head h3::after{
+    content: "";
+    display: block;
+    width: 40px; 
+    height: 5px;
+    background-color: rgb(255, 1, 1);
+    position: absolute;
+    bottom:0; 
+    left:  1.8rem;
+}
+.para-mes p{
+  color:rgba(0, 0, 0, 0.449);
+  padding:.5rem 1.1rem 0rem 1.8rem;
+  line-height:1.8rem;
+  font-size:1.2rem;
+  font-weight: medium;
+  font-style: italic;
+}
+.sign-mes img{
+    width:150px;
+    height:80px;
+    padding:0rem 0rem 0rem 1.8rem;
+}
+
+
+   /* Reivew section */
+.review{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+    background:linear-gradient(rgba(246, 11, 11, 0.573),rgba(246, 11, 11, 0.573)) ,url("../Image/truck-bg-compressed.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height:220vh;
+    margin-bottom:3rem;
+}
+.head-review h3{
+    padding:10rem 0rem 1rem 8rem;
+    font-size:2.4rem;
+    text-transform: uppercase;
+    color:#fff;
+    position: relative;
+    letter-spacing:1px;
+}
+.head-review h3::after{
+    content: "";
+    display: block;
+    width: 40px; 
+    height: 5px;
+    background-color: rgba(255, 1, 1, 0.699);
+    position: absolute;
+    bottom:0; 
+    left: 8rem;
+}
+.review-content{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.img-review img{
+    width:60px;
+    height: 58px;
+    border-radius: 100%;
+}
+.review-1,
+.review-3{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin:1.2rem 42rem 0rem 8rem;
+    background-color: #FFF;
+    padding:1.5rem;
+}
+.review-2,
+.review-4{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin:1.2rem 8rem 0rem 42rem;
+    background-color: #FFF;
+    padding:1.5rem;
+}
+.img-review-content{
+    display: flex;
+    flex-direction:row;
+    gap:2rem;
+}
+.review-name{
+    display: flex;
+    flex-direction:column;
+    gap:.3rem;
+    color:rgba(0, 0, 0, 0.571);
+    padding-top:.5rem;
+}
+.review-name h4{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing:1px;
+}
+.review-name h6{
+    font-size:.8rem;
+}
+.para-review p{
+    color:rgba(0, 0, 0, 0.425);
+    font-weight:medium;
+    font-style: italic;
+    font-size:1.1rem;
+    line-height: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+   /* team section */
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10rem 2rem 3rem 8rem;
+    width: 340px;
+}
+
+.head-team h4 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.519);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.head-team h4::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 1, 1, 0.699);
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+}
+
+.team-img {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    padding-top: 1rem;
+}
+.team-1{
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.258);
+}
+.person-img img{
+    width:340px;
+    height:320px;
+    padding:0;
+    margin: 0;
+}
+
+.text-team{
+   padding:2rem 1rem 1.2rem 1rem;
+   text-align: center;
+}
+.text-team h4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    color: rgba(0, 0, 0, 0.542);
+}
+.text-team h5{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.36);
+    padding: 0.2rem;
+    letter-spacing:1px;
+}
+
+
+/* Gallery Section */
+.container-6{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin:10rem 2rem 10rem 8rem;
+}
+.head-gallery h2{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.519);
+    position: relative;
+    padding-bottom: 1rem;
+}
+.head-gallery h2::after{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 1, 1, 0.699);
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+}
+.images-1,
+.images-2{
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+}
+.img-g img{
+    width:300px;
+    height:200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.258);
+}
+
+
+/* Location */
+.location{
+    display:flex;
+    flex-direction: row;
+    background-color:rgba(255, 0, 0, 0.881);
+    height:650px;
+  }
+  .map img{
+    width:740px;
+    height: 650px;
+  }
+  .find-location{
+    display: flex;
+    flex-direction: column;
+    padding:8rem 0rem 3rem 6rem;
+  }
+  .head-find h3{
+    font-size:2.4rem;
+    color:#fff;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: .8rem;
+  }
+  .head-find h3::after{
+    content: "";
+    display: block;
+    width: 30px; 
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    bottom:0; 
+    left:0;
+  }
+  .location-details,
+  .mail-Fax-details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    gap:4rem;
+  }
+  .loc-details,
+  .call-details,
+  .mail-1,
+  .Fax{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+  }
+  .imgi .icon{
+    color:#fff;
+    width:70px;
+    height:70px;
+  }
+  .text{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+  }
+  .text .head-text h5{
+    color:#fff;
+    font-size:1.9rem;
+    text-transform: uppercase;  
+  }
+  .para-text ul li{
+    list-style-type: none;
+    color:#fff;
+    font-size:1.1rem;
+    line-height: 1.7rem;
+  }
+  
+  
+  
+  
+  
+    /* footer */
+    .footer-sec{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: 11rem;
+        margin:13rem 0rem 5rem 0rem;
+        padding:0rem 1rem 1rem 9.5rem;
+    }
+    .d-1,
+    .d-2,
+    .d-3{
+        display: flex;
+        flex-direction:column;
+        gap:2rem;
+    }
+    .head-footer h4{
+        color:rgba(0, 0, 0, 0.478);
+        font-size:1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .content-footer{
+        letter-spacing:.1rem;
+        line-height: 2.7rem;
+        font-size: 1.2rem;
+        color:rgba(0, 0, 0, 0.353);
+        font-weight: bold;
+    }
+    
+    .d-4{
+        display: flex;
+        flex-direction: column;
+    }
+    .company{
+        display: flex;
+        flex-direction: row;
+    }
+    .company img{
+        width: 40px;
+        height:40px;
+    }
+    .company h4{
+        padding:.3rem 0rem 0rem .4rem;
+        font-size: 1.7rem;
+        font-family: 'ABeeZee', sans-serif;
+        font-family: 'Lilita One', sans-serif;
+        font-weight: bold;
+        letter-spacing:1px;
+    }
+    .para-f p{
+        color:rgba(0, 0, 0, 0.353);
+        padding-top: 1.8rem;
+        font-weight: bold;
+        letter-spacing:1px;
+    }
+    .logo-site{
+        display: flex;
+        flex-direction: row;
+        margin-top:.8rem;
+        gap:.4rem;
+        
+    }
+    .logo-site .icon{
+        color:rgba(255, 0, 0, 0.652);
+    }
+    .bottom p{
+        color:rgba(0, 0, 0, 0.578);
+        text-align: center;
+        font-size:1rem;
+        margin:0rem 0rem 3rem 0rem;
+    }
+
+  @media (max-width: 768px) {
+
+    /* header-section */
+   .logo-cont img{
+       width:150px;
+       height: auto;
+       margin: 0;
+   }
+   .ham-menu-cont {
+     display: block;
+     cursor: pointer;
+   }
+   .ham-menu-cont img{
+       width:20px;
+       height: 20px;
+   }
+ 
+   .full-menu-links {
+     display: none;
+   }
+ 
+   .responsive-nav-content {
+     padding: 10px 0;
+   }
+ 
+   .responsive-nav-content ul {
+     padding: 0;
+     list-style: none;
+   }
+ 
+   .responsive-nav-content ul li {
+     margin-bottom: 10px;
+   
+   }
+ 
+   .responsive-nav-content ul li a {
+     padding: 10px 15px;
+     color: gray;
+     font-weight: bold;
+     text-align: center;
+     align-items: center;
+     text-decoration: none;
+   }
+
+    /* ABout section */
+    .conti-about{
+        height:65vh;
+    }
+    .heading-about h1{
+        font-size:2rem;
+        padding:4rem 1rem 1rem 1rem;
+    }
+    .heading-about h1::after{
+        left:1rem;
+    }
+    .para-about{
+        padding:2rem 1rem 0rem 1rem;
+        font-size:1.1rem;
+    }
+
+      /* Message-section */
+      .message{
+        flex-direction: column;
+        margin:3rem 2rem 2rem 2rem;
+      }
+      .img-man-1 img{
+        margin: 0;
+        max-width: 100%;
+        max-height:400px;
+      }
+      .mes{
+        margin:3rem 1rem 2rem 1rem;
+        background-color:#f8f8f8;
+        box-shadow: none;
+      }
+      .mes-head h3{
+        font-size:1.8rem;
+      }
+      .para-mes p{
+        font-size:1.1rem;
+      }
+
+      /* Review -section */
+      .review{
+        height:260vh;
+      }
+      .head-review h3{
+        padding:3rem 1rem 1rem 1rem;
+        font-size:1.8rem;
+      }
+      .head-review h3::after{
+        left:1rem;
+      }
+      .star .icon-cont img{
+        width:30px;
+        height: 30px;
+      }
+      .review-1,
+      .review-3,
+      .review-2,
+      .review-4{
+        margin:1rem 1rem 1rem 1rem;
+      }
+      .review-name h4{
+        font-size:1.3rem;
+      }
+      .para-review p{
+        font-size:1rem;
+      }
+      
+/* 
+      Team-section */
+      .team{
+        margin:3rem 1rem 2rem 1rem;
+      }
+      .head-team h4{
+        font-size:1.7rem;  
+      }
+      .team-img {
+        flex-direction: column;
+        gap:3rem;
+      }
+      .team-1{
+        background-color:#f8f8f8;
+        box-shadow: none;
+        border:none;
+      }
+      .person-img img{
+        width:250px;
+        height:250px;
+        margin-left:4rem;
+      }
+      .text-team{
+        padding:.4rem 1rem 1rem 1rem;
+        margin-left:.5rem;
+      }
+      .text-team h4{
+        font-size:1.2rem;
+      }
+
+       /* Gallery-section */
+       .container-6{
+        margin:4rem 1rem 2rem 1rem;
+       }
+       .head-gallery h2{
+        font-size:1.7rem;
+        margin-left:1.1rem;
+       }
+       .images-1,
+       .images-2{
+        flex-direction: column;
+        margin-left:2rem;
+       }
+       /* location */
+       .location{
+        flex-direction: column;
+        height:1050px;
+      }
+      .map img{
+        max-width:100%;
+        max-height:400px;
+      }
+      .find-location{
+        padding:3rem 0rem 1rem 1rem;
+      }
+      .head-find h3{
+        font-size:1.7rem;
+        padding-left: 1rem;
+      }
+      .head-find h3::after{
+        content: "";
+        display: block;
+        width: 30px; 
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        bottom:0; 
+        left:1rem;
+      }
+      .location-details,
+      .mail-Fax-details{
+        flex-direction:column;
+        margin-top: 1rem;
+        gap:1rem;
+      }
+      .loc-details,
+      .call-details,
+      .mail-1,
+      .Fax{
+
+        margin-top:1.2rem;
+        gap:1.3rem;
+      }
+      .imgi .icon{
+        width:40px;
+        height:40px;
+      }
+      .text{
+        gap:.6rem;
+      }
+      .text .head-text h5{
+
+        font-size: 1.1rem;
+      }
+      .footer-sec{
+        flex-direction: column;
+        margin:3rem 1rem 0rem 1rem;
+        padding:1rem 1rem 0rem 1rem;
+        gap:3rem;
+      }
+    .d-1,
+    .d-2,
+    .d-3{
+      gap:1rem;
+    }
+    .head-footer h4{
+      font-size:1.4rem;
+    }
+    .f-1,
+    .f-2,
+    .f-3,
+    .f-4,
+    .para-f p{
+      padding-left:1.2rem;
+    }
+    .company img{
+      width:38px;
+      height: 38px;
+    }
+    .company h4{
+      font-size:1.4rem;
+    }
+    .para-f p{
+      margin-top:-1rem;
+      letter-spacing:1px;
+      font-size:1rem;
+    }
+    .logo-site{
+      padding-left:1.2rem;
+      margin-top:1rem;
+      margin-bottom:1rem;
+    }
+    .bottom p{
+      margin:1rem 1rem 1rem 1rem;
+    }
+    
+}
